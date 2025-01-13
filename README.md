@@ -10,5 +10,6 @@ I plan to iterate on this game as I believe it could be made to have better feat
 - [ ]  Different Lose Conditions
 - [ ]  New Levels
 - [ ]  Menu UI added
+- [ ]  Sound Effects added
 
-I will use this as a personal project for the start of 2025.
+I will use this as a personal project for the start of 2025, eventually posting this to Itch.io.
