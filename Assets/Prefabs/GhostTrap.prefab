@@ -190,3 +190,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToSpawn: {fileID: 9159212714056175708, guid: efb265ebab8d0fb488a36739e71cea39, type: 3}
   buildEffect: {fileID: 4771022903837773843, guid: 2c7a8946f3aec4e4dab42775e6796e35, type: 3}
+  buildSound: {fileID: 6836078465354899606, guid: edf87f7d6d08b6c47ba2d4f34a0f20e2, type: 3}

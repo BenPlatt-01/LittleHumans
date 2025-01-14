@@ -103,6 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToSpawn: {fileID: 2881197400317183219, guid: 9fb67ba9201107843b4db3c4d4e92d41, type: 3}
   buildEffect: {fileID: 4771022903837773843, guid: 2c7a8946f3aec4e4dab42775e6796e35, type: 3}
+  buildSound: {fileID: 6836078465354899606, guid: edf87f7d6d08b6c47ba2d4f34a0f20e2, type: 3}
 --- !u!1 &9178694078098471354
 GameObject:
   m_ObjectHideFlags: 0

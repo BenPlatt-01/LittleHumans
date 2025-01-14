@@ -19,9 +19,14 @@ public class Worker : MonoBehaviour
 
     public GameObject resourcePopUp;
 
+    private AudioSource source;
+
+    public GameObject deathSound;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        source = GetComponent<AudioSource>();
         bloodAltar = GameObject.FindGameObjectWithTag("Altar");
     }
 
@@ -39,6 +44,7 @@ public class Worker : MonoBehaviour
         {
             if (Vector3.Distance(transform.position, bloodAltar.transform.position)<= distanceToAltar) 
             {
+                Instantiate(deathSound);
                 ResourceManager.instance.AddSacrificiedWorker();
                 Destroy(gameObject);
             }
@@ -72,6 +78,7 @@ public class Worker : MonoBehaviour
 
     private void OnMouseDown()
     {
+        source.Play();
         isSelected = true;
     }
 
