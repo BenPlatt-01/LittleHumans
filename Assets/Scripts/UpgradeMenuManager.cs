@@ -1,16 +1,14 @@
 using UnityEngine;
-using UnityEngine.UI;
 
-public class ShopMenuManager : MonoBehaviour
+public class UpgradeMenuManager : MonoBehaviour
 {
 
-    public GameObject shopMenu;
-    
+    public GameObject upgradeMenu;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -19,16 +17,15 @@ public class ShopMenuManager : MonoBehaviour
         
     }
 
-    public void OpenShop()
+    public void OpenUpgrades()
     {
-        shopMenu.SetActive(true);
+        upgradeMenu.SetActive(true);
         Time.timeScale = 0f;
     }
 
-    public void CloseShop() 
+    public void CloseUpgrades()
     {
-        shopMenu.SetActive(false);
+        upgradeMenu.SetActive(false);
         Time.timeScale = 1;
     }
-
 }
