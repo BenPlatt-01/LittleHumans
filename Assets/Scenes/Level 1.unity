@@ -4059,7 +4059,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0/25
+  m_text: 0/15
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: df9705bb055bcc0459a1dfa1d1aa8e69, type: 2}
   m_sharedMaterial: {fileID: 1075368249860782520, guid: df9705bb055bcc0459a1dfa1d1aa8e69, type: 2}
@@ -4690,7 +4690,7 @@ MonoBehaviour:
   - {fileID: 1937242669}
   - {fileID: 1646764381}
   enemyPrefab: {fileID: 933332627608277254, guid: cb3ad77f618ada7449939b675511fb8a, type: 3}
-  timeBetweenSpawns: 5
+  timeBetweenSpawns: 10
 --- !u!4 &1228743502
 Transform:
   m_ObjectHideFlags: 0
@@ -6613,7 +6613,7 @@ MonoBehaviour:
   wood: 0
   blood: 0
   crystal: 0
-  sacrificeGoal: 20
+  sacrificeGoal: 15
   numberOfWorkersSacrificed: 0
   woodDisplay: {fileID: 1375478419}
   bloodDisplay: {fileID: 568062092}
