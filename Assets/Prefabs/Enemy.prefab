@@ -183,6 +183,7 @@ MonoBehaviour:
   maxX: 24
   maxY: 12
   blood: {fileID: 6752482034917441806, guid: 30f02774ac2a14045b66753e708c60b8, type: 3}
+  gameOverScreen: {fileID: 6779708809033971937, guid: 9882075a0d982544b9def57e38228721, type: 3}
 --- !u!95 &3328051567081157418
 Animator:
   serializedVersion: 7

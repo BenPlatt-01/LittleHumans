@@ -18,6 +18,8 @@ public class ResourceManager : MonoBehaviour
 
     public static ResourceManager instance;
 
+    public GameObject WinScreen;
+
     
     public void Awake()
     { 
@@ -63,9 +65,8 @@ public class ResourceManager : MonoBehaviour
 
         if (numberOfWorkersSacrificed >= sacrificeGoal) 
         {
-            print("YOU HAVE WON!");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-
+            WinScreen.SetActive(true);
+            Time.timeScale = 0f;
         }
     }
 

@@ -44,19 +44,48 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Altar")
+        if (collision.CompareTag("Altar"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            // Trigger camera shake animation
+            if (camAnim != null)
+            {
+                camAnim.SetTrigger("Shake");
+            }
+            else
+            {
+                Debug.LogWarning("Camera Animator is not assigned.");
+            }
+
+            // Trigger Game Over using the Singleton pattern
+            if (GameOver.Instance != null)
+            {
+                GameOver.Instance.GameEnd();
+            }
+            else
+            {
+                Debug.LogError("GameOver singleton not found.");
+            }
         }
-        if(collision.tag == "Trap")
+
+        if (collision.CompareTag("Trap"))
         {
-            camAnim.SetTrigger("Shake");
+            // Trigger camera shake and handle trap logic
+            if (camAnim != null)
+            {
+                camAnim.SetTrigger("Shake");
+            }
+
+            // Destroy trap object and spawn blood
             Destroy(collision.gameObject);
             Instantiate(blood, transform.position, Quaternion.identity);
+
+            // Destroy the enemy itself
             Destroy(gameObject);
         }
-        if (collision.tag == "Human")
+
+        if (collision.CompareTag("Human"))
         {
+            // Destroy human object and spawn blood
             Destroy(collision.gameObject);
             Instantiate(blood, transform.position, Quaternion.identity);
         }
